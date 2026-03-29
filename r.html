@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorcas Institute of Fashion Designing</title>
+
+  <style>
+    @font-face {
+      font-family: 'Muthike';
+      src: url('./Muthike.otf');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff5f8;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff3399;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./poster.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero .title-img {
+      width: 300px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 15px rgba(255,0,150,0.7));
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin: 15px 0;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #ff3399, #ff66cc);
+      padding: 12px 25px;
+      border-radius: 30px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(255,0,150,0.6);
+    }
+
+    .courses {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .courses h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .course-box {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(15px);
+      padding: 30px;
+      border-radius: 20px;
+      width: 280px;
+      transition: 0.3s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+    }
+
+    .card h3 {
+      color: #ff3399;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #ff4da6, #ff99cc);
+      color: white;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="./Logo.png" alt="Dorcas Logo">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="./name.png" class="title-img" alt="Dorcas">
+  <p>Create Your Own Style</p>
+  <button class="btn">Apply Now</button>
+</section>
+
+<section class="courses" id="courses">
+  <h2>Our Courses</h2>
+  <div class="course-box">
+
+    <div class="card">
+      <h3>3 Month Course</h3>
+      <p>Certification Program</p>
+    </div>
+
+    <div class="card">
+      <h3>6 Month Course</h3>
+      <p>Diploma Program</p>
+    </div>
+
+    <div class="card">
+      <h3>1 Year Course</h3>
+      <p>Advanced Diploma</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📍 Thirumala, Trivandrum</p>
+  <p>📞 +91 9446878807</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/919446878807">Chat on WhatsApp</a>
+
+<footer>
+  <p>© 2026 Dorcas Institute. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
